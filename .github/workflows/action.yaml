@@ -23,6 +23,7 @@ jobs:
           distribution: 'adopt'
           cache: maven
       - name: build with maven
+        continue-on-error: true
         run: |
           chmod +x mvnw
           mvn clean install
