@@ -13,7 +13,7 @@ on:
 jobs:
   maven-build:
     runs-on: ubuntu-latest
-    enviornment: testing
+    environment: testing
     steps:
       - name: github repo checkout
         uses: actions/checkout@v3
