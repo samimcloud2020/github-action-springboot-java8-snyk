@@ -60,7 +60,7 @@ jobs:
       - name: ZAP Scan
         uses: zaproxy/action-full-scan@v0.4.0
         with:
-          target: 'https://www.bsnl.co.in/'  #target is you deployed public acccess website
+          target: 'http://www.urbanodisha.gov.in/'  #target is you deployed public acccess website
        
       - name: save artifacts
         uses: actions/upload-artifact@v3  
