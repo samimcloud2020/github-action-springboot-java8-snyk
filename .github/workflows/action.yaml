@@ -24,7 +24,7 @@ jobs:
           cache: maven
       - name: build with maven
         run: |
-          chmod +x mvnw
+          
           mvn -b package --file pom.xml fail
           mkdir artifacts && cp target/*.jar artifacts
           cd artifacts && ls    
