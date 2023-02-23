@@ -36,13 +36,10 @@
 	</dependencies>
 
 	<build>
+		 <defaultGoal>install</defaultGoal>
 		<plugins>
 			<plugin>
-				<executions>
-					<execution>
-						<goal>install</goal>
-					</execution>
-				</executions>	
+				
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
