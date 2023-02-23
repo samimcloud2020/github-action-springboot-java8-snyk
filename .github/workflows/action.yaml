@@ -25,6 +25,7 @@ jobs:
       - name: build with maven
         run: |
           chmod +x mvnw
+          mvn clean install
           mvn -b package --file pom.xml 
           mkdir artifacts && cp target/*.jar artifacts
           cd artifacts && ls    
